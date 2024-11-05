@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Ноября 2024. Лекция RGB.</title>
+    <style>
+        
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 10px; 
+        }
+    </style>
+</head>
+<body>
+    <script>
+        
+        const colors = [
+            'rgb(0, 0, 255)', // синий
+            'rgb(0, 255, 0)', // зеленый
+            'rgb(0, 0, 0)',   // черный
+            'rgb(255, 255, 0)', // желтый
+            'rgb(255, 165, 0)', // оранжевый
+            'rgb(128, 0, 128)', // фиолетовый
+            'rgb(255, 192, 203)' // розовый
+        ];
+
+        colors.forEach(color => {
+            let box = document.createElement('div');
+            box.style.width = '200px';
+            box.style.height = '300px';
+            box.style.backgroundColor = color;
+            document.body.append(box);
+        });
+    </script>
+</body>
+</html>
